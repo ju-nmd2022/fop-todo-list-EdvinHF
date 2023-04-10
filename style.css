@@ -32,3 +32,16 @@ input {
   border-radius: 5px;
   border: 2.5px solid #e0e1e4;
 }
+li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+#choreList {
+  display: flex;
+  flex-direction: column;
+}
+.choreWrapper {
+  display: flex;
+  flex-direction: row;
+}
