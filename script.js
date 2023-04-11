@@ -2,7 +2,6 @@ let uniqeId = 0;
 
 function addChore() {
   uniqeId = uniqeId + 1;
-
   const inputElement = document.getElementById("input");
   let chore = inputElement.value;
   inputElement.value = "";
@@ -11,9 +10,11 @@ function addChore() {
     const removeButton = document.createElement("button");
     const doneButton = document.createElement("button");
     const choreText = document.createTextNode(chore);
-    doneButton.id = "done" + uniqeId;
     choreItem.id = "li" + uniqeId;
-    removeButton.id = "button" + uniqeId;
+    doneButton.id = "done" + uniqeId;
+    doneButton.id = "done";
+    removeButton.classList.add("remove");
+    doneButton.classList.add("done");
     choreItem.appendChild(choreText);
     const choreListElement = document.getElementById("choreList");
     choreListElement.appendChild(choreItem);

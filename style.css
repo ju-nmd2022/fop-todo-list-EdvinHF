@@ -19,6 +19,7 @@ button {
   background-color: white;
   transition: all 0.2s ease-in-out 0ms;
   margin-left: 2px;
+  margin-right: 2px;
 }
 
 button:hover {
@@ -46,4 +47,42 @@ ul {
 .choreWrapper {
   display: flex;
   flex-direction: row;
+}
+.done {
+  background-color: rgb(43, 255, 0);
+}
+.remove {
+  background-color: rgb(255, 0, 0);
+}
+.remove::before,
+.remove::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+.remove::before {
+  transform: translate(-8px, -1px) rotate(45deg);
+}
+.remove::after {
+  transform: translate(-8px, -1px) rotate(-45deg);
+}
+.done::before,
+.done::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 1px;
+}
+.done::before {
+  transform: translate(-9px, -1px) rotate(42deg);
+  width: 10px;
+}
+.done::after {
+  transform: translate(-4px, -2px) rotate(-55deg);
+  width: 13px;
 }
