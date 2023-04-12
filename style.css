@@ -6,8 +6,7 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.iBWrapper {
-}
+
 button {
   width: fit-content;
   min-width: 30px;
@@ -42,11 +41,12 @@ ul {
 
 #choreList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 .choreWrapper {
   display: flex;
   flex-direction: row;
+  min-width: 300px;
 }
 .done {
   background-color: rgb(43, 255, 0);
@@ -85,4 +85,9 @@ ul {
 .done::after {
   transform: translate(-4px, -2px) rotate(-55deg);
   width: 13px;
+}
+.choreContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
 }
